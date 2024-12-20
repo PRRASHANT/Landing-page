@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:gilroy;
+}
+
+html,body{
+    height: 100%;
+    width:100%;
+}
+
+#main{
+    height: 100% ;
+    width: 100%;
+    display: flex;
+
+}
+
+#left{
+    position: relative;
+    height: 100%;
+    width:40%;
+    
+}
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding:20px 30px;
+}
+#lnavr{
+    display: flex;
+    align-items: center;
+   
+}
+
+#lnavr a{
+    margin-right:20px ;
+    text-decoration: none;  
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+#lnavr i{
+    color: royalblue;
+}
+#left #textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+#textcenter h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+
+#textcenter p{
+    opacity: .6;
+    font-size: 12px;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+#textcenter a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .8;
+}
+
+#right{
+    height: 100%;
+    width: 60%;
+    background-color: white;
+}
+
+#rtop{
+    height:48%;
+    width:100%;
+    display: flex;
+}
+#rleft{
+    height: 100%;
+    width:55%;
+    background-image: url(https://images.unsplash.com/photo-1709004227916-bf5ec8fe27dd?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position:center;
+    background-size: cover;
+
+}
+#rright{
+    height: 100%;
+    width: 45%;
+ 
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+}
+
+#rbottom{
+    height: 52%;
+    width: 100%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1719611418530-353ffc0e92ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+     background-position: center; 
+    background-size:cover ;
+    
+}
+@media(max-width:500px){
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width:100%
+    }
+    #main #right{
+        width: 100%;
+    }
+}
+/*     */
